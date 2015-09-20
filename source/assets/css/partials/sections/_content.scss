@@ -1,0 +1,140 @@
+// Fixed Items
+.fixed-top{
+	position: fixed;
+	top: 30px;
+	left: 30px;
+	font-size: 14px;
+	color: $c_a;
+	padding: 0px 0px 5px 0px;
+	border-bottom: 2px solid $c_a;
+}
+.fixed-bottom{
+	@extend .fixed-top;
+	top: auto;
+	bottom: 30px;
+}
+.trang{
+	@extend .fixed-top;
+	top: auto;
+	left: auto;
+	right: 30px;
+	bottom: 30px;
+}
+.link{
+	position: fixed;
+	top: 30px;
+	right: 30px;
+	.rel{
+		position: relative;
+		a{
+			display: inline-block;
+			color: $c_b;
+			padding: 0px 0px 5px 0px;
+			border-bottom: 2px solid $c_b;
+			text-decoration: none;
+			font-size: 14px;
+			text-align: right;
+		}
+		span{
+			display: block;
+			position: absolute;
+			font-size: 12px;
+			margin: 10px 0px 0px 0px;
+			padding: 10px;
+			background-color: #fff;
+			border: 1px solid #ddd;
+			width: 130px;
+			right: 0px;
+			color: $c_c;
+			line-height: 1.5;
+			display: none;
+		}
+	}
+}
+// Content
+.main-content{
+	padding: 30px;
+	header{
+		@extend .cf;
+		.left{float: left;}
+		.right{
+			float: right;
+			img{
+				max-width: 250px;
+				display: block;
+				float: left;
+			}
+		}
+		h1{
+			font-size: 14px;
+			color: $c_a;
+			padding: 0px 0px 30px 0px;
+		}
+		p{
+			max-width: 200px;
+			line-height: 2;
+			font-size: 14px;
+			color: $c_c;
+			padding: 0px 0px 30px 0px;
+		}
+	}
+	article{
+		float: left;
+		width: 45%;
+		h1{
+			display: inline-block;
+			font-size: 14px;
+			color: $c_d;
+			border-bottom: 2px solid $c_d;
+			padding: 0px 0px 5px 0px;
+			margin: 0px 0px 30px 0px;
+		}
+		.work{
+			margin: 0px 0px 30px 0px;
+			@include easing(350ms);
+			&:hover{
+				@include easing(350ms);
+				background-color: $c_f;
+			}
+			a{
+				display: inline-block;
+				color: $c_b;
+				font-size: 14px;
+				text-decoration: none;
+				padding: 0px 0px 10px 0px;
+				@include easing(350ms);
+				&:hover{
+					@include easing(350ms);
+					color: $c_a;
+				}
+			}
+			p{
+				font-size: 14px;
+				color: $c_c;
+			}
+		}
+	}
+	aside{
+		float: right;
+		width: 50%;
+		background-color: $c_f;
+		padding: 10px;
+		p{
+			color: $c_g;
+			font-size: 22px;
+			font-family: $f_b;
+			padding: 0px 0px 30px 0px;
+			line-height: 2;
+			&:last-of-type{padding-bottom:0px;}
+			a{
+				color: $c_b;
+				text-decoration: none;
+				@include easing(350ms);
+				&:hover{
+					@include easing(350ms);
+					color: $c_a;
+				}
+			}
+		}
+	}
+}
