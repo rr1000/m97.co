@@ -5,6 +5,8 @@ set :css_dir, 'assets/css'
 set :js_dir, 'assets/js'
 set :images_dir, 'assets/img'
 
+set :build_dir, '../html'
+
 activate :directory_indexes
 
 configure :build do
@@ -18,10 +20,3 @@ set :markdown_engine, :redcarpet
 set :markdown, :fenced_code_blocks => true, :smartypants => true, :tables => true, :with_toc_data => true, :no_intra_emphasis => true
 
 activate :syntax, :wrap => true
-
-set :url_root, 'XXXXX.com'
-activate :search_engine_sitemap
-page "/sitemap.xml", :layout => false
-
-activate :blog do |blog|
-end
