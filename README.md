@@ -1,1 +1,1 @@
-![Dig a bit deeper](/assets/img/fizzle.svg)
+![Dig a bit deeper](http://i.imgur.com/XpUmgVM.png)
