@@ -117,7 +117,8 @@
 	aside{
 		float: right;
 		width: 50%;
-		background-color: $c_f;
+		// background-color: $c_f;
+		@include background-gradient(#FFFDF3, $c_f);
 		padding: 10px;
 		p{
 			color: $c_g;
@@ -134,6 +135,25 @@
 					@include easing(350ms);
 					color: $c_a;
 				}
+			}
+		}
+	}
+}
+.main-footer{
+	padding: 0px 30px;
+	nav{
+		margin: 0px 0px 30px 0px;
+		padding: 0px 0px 5px 0px;
+		a{
+			display: inline-block;
+			color: $c_b;
+			text-decoration: none;
+			font-size: 14px;
+			margin: 0px 20px 0px 0px;
+			@include easing(350ms);
+			&:hover{
+				@include easing(350ms);
+				color: $c_a;
 			}
 		}
 	}

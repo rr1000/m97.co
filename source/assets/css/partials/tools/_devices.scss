@@ -32,3 +32,13 @@
 		}
 	}
 }
+@media all and (max-width: 520px){
+	.main-footer{
+		nav{
+			a{
+				display: block;
+				margin: 0px 0px 20px 0px;
+			}
+		}
+	}
+}
