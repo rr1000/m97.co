@@ -158,3 +158,21 @@
 		}
 	}
 }
+body.pixels{
+	border-top: 5px solid #222;
+	.fixed-top{color: #222;border-bottom:2px solid #222;}
+	.main-content{
+		header{h1{color:#222;}}
+	}
+}
+.pixel-block{
+	span.pix{
+		display: inline-block;
+		max-width: 50px;
+		height: auto;
+		img{
+			max-width: 100%;
+			height: auto;
+		}
+	}
+}
