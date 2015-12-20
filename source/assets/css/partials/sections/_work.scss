@@ -1,0 +1,27 @@
+.work-content{
+	img{max-width: 100%;width: 100%;height: auto;}
+	padding: 50px 20px;
+	font-family: $f_mono;
+	h3{
+		color: $c_main-blue;
+		line-height: 2;
+		font-size: 12px;
+		max-width: 600px;
+		margin: 0px auto;
+	}
+	figcaption{
+		text-align: center;
+		color: $c_text;
+		background-color: $c_light-blue;
+		padding: 5px;
+		max-width: 450px;
+		margin: 0px auto 30px auto;
+	}
+	p{
+		color: $c_text;
+		line-height: 2;
+		font-size: 12px;
+		max-width: 600px;
+		margin: 0px auto 30px auto;
+	}
+}

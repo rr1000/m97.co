@@ -5,7 +5,7 @@
 		<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Ryan S. Rich - Product Designer">
-		<title>Ryan S. Rich</title>
+		<title>Ryan S. Rich - Product Designer in Portland Oregon | <%= current_page.data.title %></title>
 		<link rel="icon" type="image/png" href="/assets/img/favicon.png">
 		<script>
 			!function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
@@ -27,6 +27,6 @@
 	</head>
 	<body class="<%= page_classes %>">
 		<%= yield %>
-		<%= javascript_include_tag "http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js", "main" %>
+		<%= javascript_include_tag "http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js", "debounce", "browser", "//ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js", "easing", "main" %>
 	</body>
 </html>

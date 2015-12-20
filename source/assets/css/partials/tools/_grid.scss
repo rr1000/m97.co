@@ -1,14 +1,14 @@
 [class*='col-']{
 	float: left;
-	padding-right: 20px;
+	padding: 0px 20px;
 }
 [class*='col-']:last-of-type{
-	padding-right: 0px;
+	// padding-right: 0px;
 }
 .grid{
 	width: 100%;
-	max-width: 850px;
-	min-width: 755px;
+	max-width: 1100px;
+	min-width: 880px;
 	margin: 0 auto;
 	overflow: hidden;
 }

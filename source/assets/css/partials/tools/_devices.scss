@@ -1,4 +1,53 @@
-@media all and (max-width: 1080px){
+@media all and (max-width: 879px){
+	.main-header{
+		padding: 0px;
+		a.name{
+			float: none;
+			padding: 20px;
+		}
+		nav{
+			float: none;
+			display: none;
+			border-top: 2px solid darken($c_main-blue, 20%);
+			a{
+				display: block;
+				padding: 20px;
+				border-bottom: 2px solid darken($c_main-blue, 20%);
+				margin: 0px;
+				&:last-of-type{border: 0px;}
+			}
+		}
+		a.logo{display: none;}
+		.burg{
+			display: block;
+			position: absolute;
+			right: 10px;
+			top: 12px;
+		}
+	}
+	.main-masthead{
+		padding: 30px;
+		h1{font-size: 18px;}
+	}
+	.work{
+		padding: 0px;
+		.row{margin: 0px;}
+	}
+	.about{
+		padding: 30px;
+		.imgOne,
+		.imgTwo,
+		.imgThree{
+			opacity: 0.5;
+			position: relative;
+			margin: 0px;
+			display: none;
+		}
+		.imgOne{
+			display: block;
+			margin: 0px 0px 30px 0px;
+		}
+	}
 	.grid{
 		width: 100%;
 		min-width: 0;
@@ -7,38 +56,20 @@
 		padding-left: 0px;
 		padding-right: 0px;
 	}
-	.fixed-top{
-		position: relative;
+	[class*='col-']{
 		width: auto;
-		display: inline-block;
-		top: auto;
-		right: auto;
-		left: auto;
-		bottom: auto;
-		margin: 30px 0px 0px 30px;
-	}
-	.trang{display: none;}
-}
-@media all and (max-width: 590px){
-	.link{top: 34px}
-	.main-content{
-		aside{
-			float: none;
-			width: 100%;
-		}
-		article{
-			float: none;
-			width: 100%;
-		}
+		float: none;
+		margin-left: 0px;
+		margin-right: 0px;
+		padding: 0px;
 	}
 }
-@media all and (max-width: 520px){
-	.main-footer{
-		nav{
-			a{
-				display: block;
-				margin: 0px 0px 20px 0px;
-			}
-		}
+@media all and (max-width: 879px){
+	.main-masthead{
+		h1{line-height: 1.5;padding: 0px 0px 20px 0px;}
+	}
+	.about{
+		h1{margin: 0px;padding: 0px 0px 20px 0px;}
+		p{padding: 0px;margin: 0px 0px 20px 0px;}
 	}
 }

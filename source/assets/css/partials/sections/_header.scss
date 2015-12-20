@@ -1,0 +1,87 @@
+.main-header{
+	padding: 20px;
+	background-color: $c_dark;
+	font-size: 11px;
+	position: fixed;
+	z-index: 101;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	width: 100%;
+	@extend .cf;
+	a{
+		@include easing(350ms);
+		&:hover{
+			@include easing(350ms);
+			color: #FFDA86;
+		}
+	}
+	a.name{
+		display: block;
+		float: left;
+		color: #fff;
+		letter-spacing: 3px;
+		text-transform: uppercase;
+		&:hover{
+			@include easing(350ms);
+			color: #FFDA86;
+		}
+	}
+	a.logo{
+		display: block;
+		width: 44px;
+		height: 32px;
+		background: url('../img/logo.png');
+		background-repeat: no-repeat;
+		background-position: 0px 0px;
+		background-size: 44px 32px;
+		position: absolute;
+		top: 10px;
+		left: 0px;
+		right: 0px;
+		margin: auto;
+	}
+	nav{
+		float: right;
+		a{
+			margin: 0px 0px 0px 20px;
+			display: inline-block;
+			color: #fff;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			&:first-of-type{margin: 0px;}
+		}
+	}
+	.burg{
+		display: none;
+		.open{
+			background: url('../img/burg.svg');
+			background-repeat: no-repeat;
+			height: 28px;
+			width: 31px;
+			background-position: 0px 0px;
+			background-size: 31px 28px;
+			@include easing(350ms);
+			&:hover{
+				@include easing(350ms);
+				cursor: pointer;
+				opacity: 0.5;
+			}
+		}
+		.close{
+			display: none;
+			background: url('../img/close.svg');
+			background-repeat: no-repeat;
+			height: 28px;
+			width: 31px;
+			background-position: 0px 0px;
+			background-size: 31px 28px;
+			@include easing(350ms);
+			&:hover{
+				@include easing(350ms);
+				cursor: pointer;
+				opacity: 0.5;
+			}
+		}
+	}
+}
