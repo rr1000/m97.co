@@ -1,5 +1,5 @@
 .work-content{
-	img{max-width: 100%;width: 100%;height: auto;}
+	img{max-width: 100%;width: 100%;height: auto;display: block;margin: auto;}
 	padding: 50px 20px;
 	font-family: $f_mono;
 	h3{
@@ -23,5 +23,37 @@
 		font-size: 12px;
 		max-width: 600px;
 		margin: 0px auto 30px auto;
+	}
+	.notice{
+		padding: 20px;
+		background-color: #E0FFE2;
+		max-width: 600px;
+		margin: 0px auto 30px auto;
+		p{
+			padding: 0px;
+			margin: 0px;
+		}
+	}
+	figure.small-image{
+		img{max-width: 450px;margin: auto;}
+	}
+}
+a.next-work{
+	background-color: #F8E71C;
+	color: darken(#F8E71C, 30%);
+	font-size: 20px;
+	font-family: $f_sans;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	width: 100%;
+	position: relative;
+	z-index: 99;
+	padding: 30px;
+	@include easing(350ms);
+	&:hover{
+		@include easing(350ms);
+		background-color: $c_dark;
+		color: #fff;
 	}
 }

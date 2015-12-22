@@ -4,8 +4,8 @@
 	background-color: $c_light-blue;
 	h1{
 		text-align: center;
-		font-size: 22px;
-		padding: 0px 0px 30px 0px;
+		font-size: 25px;
+		padding: 0px 0px 15px 0px;
 		color: $c_main-blue;
 	}
 	p{
@@ -16,6 +16,12 @@
 		margin: 0px auto;
 		text-align: center;
 		color: $c_main-blue;
+	}
+	h2{
+		text-align: center;
+		padding: 0px 0px 30px 0px;
+		font-size: 16px;
+		color: darken($c_main-blue, 30%);
 	}
 }
 .work-masthead{
@@ -97,4 +103,59 @@
 		background-position: 121px 148px;
 	}
 	.cover-me{background-image: linear-gradient(-180deg, rgba(255,255,255,0.00) 0%, #9603FF 100%);}
+}
+.knowledge-masthead{
+	background: url('../img/letters/k/k_bg.png') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	.letter{
+		height: 141px;
+		width: 110px;
+		background: url("../img/letters/k/k_.svg");
+		background-position: 110px 141px;
+	}
+	.cover-me{background-image: linear-gradient(-180deg, rgba(255,255,255,0.00) 0%, #0319FF 100%);}
+}
+.redpoint-future-masthead{
+	background: url('../img/letters/f/f_bg.png') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	.letter{
+		height: 141px;
+		width: 86px;
+		background: url("../img/letters/f/f_.svg");
+		background-position: 86px 141px;
+	}
+	.cover-me{background-image: linear-gradient(-180deg, rgba(255,255,255,0.00) 0%, #172055 100%);}
+}
+.engineering-masthead{
+	background: url('../img/letters/e/e_bg.png') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	.letter{
+		height: 141px;
+		width: 86px;
+		background: url("../img/letters/e/e_.svg");
+		background-position: 86px 141px;
+	}
+	.cover-me{background-image: linear-gradient(-180deg, rgba(255,255,255,0.00) 0%, #53AFB9 100%);}
+}
+a.work-cta{
+	background-image: linear-gradient(-180deg, lighten($c_dark, 10%) 0%, $c_dark 100%);
+	color: #fff;
+	background-color: $c_dark;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	width: 220px;
+	position: relative;
+	z-index: 99;
+	padding: 10px;
+	margin: 30px 0px 0px 0px;
 }

@@ -8,11 +8,11 @@
 		nav{
 			float: none;
 			display: none;
-			border-top: 2px solid darken($c_main-blue, 20%);
+			border-top: 2px solid #010101;
 			a{
 				display: block;
 				padding: 20px;
-				border-bottom: 2px solid darken($c_main-blue, 20%);
+				border-bottom: 2px solid #010101;
 				margin: 0px;
 				&:last-of-type{border: 0px;}
 			}
