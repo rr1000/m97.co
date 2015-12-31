@@ -7,8 +7,6 @@ set :images_dir, 'assets/img'
 
 set :build_dir, '../html'
 
-activate :directory_indexes
-
 configure :build do
   activate :minify_css
   activate :minify_javascript
@@ -16,7 +14,10 @@ configure :build do
   activate :directory_indexes
 end
 
+# Activate Extensions
+activate :syntax, :wrap => true
+activate :directory_indexes
+activate :livereload
+
 set :markdown_engine, :redcarpet
 set :markdown, :fenced_code_blocks => true, :smartypants => true, :tables => true, :with_toc_data => true, :no_intra_emphasis => true
-
-activate :syntax, :wrap => true

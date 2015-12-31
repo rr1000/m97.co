@@ -1,31 +1,55 @@
 .main-masthead{
-	margin: 51px 0px 0px 0px;
-	padding: 100px 20px;
-	background-color: $c_light-blue;
+	border-top: 51px solid $c_dark;
+	padding: 150px 20px;
+	border-bottom: 1px solid $c_main-blue;
+	position: relative;
+	// background-color: darken($c_light-blue, 1%);
 	h1{
-		text-align: center;
 		font-size: 25px;
-		padding: 0px 0px 15px 0px;
-		color: $c_main-blue;
-	}
-	p{
-		font-family: $f_mono;
-		font-size: 12px;
-		line-height: 2;
-		max-width: 400px;
-		margin: 0px auto;
-		text-align: center;
+		padding: 0px 0px 50px 20px;
 		color: $c_main-blue;
 	}
 	h2{
-		text-align: center;
-		padding: 0px 0px 30px 0px;
+		padding: 0px 0px 50px 20px;
 		font-size: 16px;
-		color: darken($c_main-blue, 30%);
+		color: $c_dark;
+	}
+	p{
+		font-family: $f_mono;
+		font-size: 14px;
+		line-height: 2;
+		max-width: 600px;
+		padding: 0px 0px 0px 20px;
+		color: $c_dark;
+	}
+	.location{
+		position: absolute;
+		left: -154px;
+		top: 193px;
+		padding: 0px 0px 5px 0px;
+		border-bottom: 1px solid $c_dark;
+		color: $c_dark;
+		@include rotate(-90deg);
+	}
+	.distinction{
+		position: absolute;
+		padding: 0px 0px 5px 0px;
+		right: -94px;
+		bottom: 134px;
+		text-transform: uppercase;
+		font-size: 12px;
+		border-bottom: 1px solid $c_dark;
+		color: $c_dark;
+		span{
+			display: inline-block;
+			margin-right: 20px;
+			&:last-of-type{color: $c_main-blue;}
+		}
+		@include rotate(90deg);
 	}
 }
 .work-masthead{
-	margin: 51px 0px 0px 0px;
+	border-top: 51px solid $c_dark;
 	padding: 100px 20px;
 	background: #111;
 	position: relative;
@@ -147,15 +171,24 @@
 	.cover-me{background-image: linear-gradient(-180deg, rgba(255,255,255,0.00) 0%, #53AFB9 100%);}
 }
 a.work-cta{
-	background-image: linear-gradient(-180deg, lighten($c_dark, 10%) 0%, $c_dark 100%);
+	border: 2px solid #fff;
 	color: #fff;
-	background-color: $c_dark;
 	text-align: center;
 	text-decoration: none;
+	text-transform: uppercase;
 	display: block;
 	width: 220px;
+	font-family: $f_mono;
+	font-weight: 700;
+	font-size: 12px;
+	letter-spacing: 3px;
 	position: relative;
 	z-index: 99;
 	padding: 10px;
 	margin: 30px 0px 0px 0px;
+	@include easing(350ms);
+	&:hover{
+		@include easing(350ms);
+		background-color: rgba(255,255,255,0.2);
+	}
 }

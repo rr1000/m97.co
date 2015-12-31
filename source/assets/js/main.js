@@ -26,7 +26,13 @@ $(document).ready(function(){
 			opacity : 1
 		}, 400, 'easeOutCubic');
 	}));
-	$(".imgOne" ).draggable();
-	$(".imgTwo" ).draggable();
-	$(".imgThree" ).draggable();
+	$(".imgOne" ).draggable({
+		containment: ".about"
+	});
+	$(".imgTwo" ).draggable({
+		containment: ".about"
+	});
+	$(".imgThree" ).draggable({
+		containment: ".about"
+	});
 });
