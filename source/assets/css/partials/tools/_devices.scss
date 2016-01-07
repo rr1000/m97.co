@@ -1,3 +1,8 @@
+// 1199
+@media all and (max-width: 1199px){
+	.main-masthead{h1,h2,p{padding-left: 40px;}}
+}
+// 879px
 @media all and (max-width: 879px){
 	.main-header{
 		padding: 0px;
@@ -15,6 +20,14 @@
 				border-bottom: 2px solid #010101;
 				margin: 0px;
 				&:last-of-type{border: 0px;}
+				span{
+					margin-top: 2px;
+					left: 20px;
+					display: block;
+					position: absolute;
+					font-size: 8px;
+					@include opacity(0.5);
+				}
 			}
 		}
 		a.logo{display: none;}
@@ -25,9 +38,17 @@
 			top: 12px;
 		}
 	}
+	// Masthead
 	.main-masthead{
-		padding: 30px;
+		padding: 60px 30px;
+		border-bottom: 0px;
 		h1{font-size: 18px;}
+		.location{
+			font-size: 11px;
+			left: -115px;
+			top: 155px;
+		}
+		.distinction{display: none;}
 	}
 	.work{
 		padding: 0px;
@@ -64,12 +85,31 @@
 		padding: 0px;
 	}
 }
-@media all and (max-width: 879px){
+// 645
+@media all and (max-width: 645px){
+	.work-masthead{
+		padding: 60px 30px;
+		border-bottom: 0px;
+		h1{line-height: 1.5;font-size: 18px;}
+		.letter{display: none;}
+	}
+}
+// 374
+@media all and (max-width: 400px){
 	.main-masthead{
-		h1{line-height: 1.5;padding: 0px 0px 20px 0px;}
+		p{max-width: 275px;padding-left: 27px;}
+		h1,h2{
+			padding-left: 27px;
+			line-height: 1.5;
+		}
 	}
-	.about{
-		h1{margin: 0px;padding: 0px 0px 20px 0px;}
-		p{padding: 0px;margin: 0px 0px 20px 0px;}
+	.main-footer{
+		p.p2{
+			line-height: 1.5;
+		}
 	}
+}
+// 320
+@media all and (max-width: 320px){
+	.main-masthead{.distinction{display: none;}}
 }
