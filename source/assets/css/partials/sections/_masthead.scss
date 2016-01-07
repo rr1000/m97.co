@@ -3,7 +3,6 @@
 	padding: 150px 20px;
 	border-bottom: 1px solid $c_main-blue;
 	position: relative;
-	// background-color: darken($c_light-blue, 1%);
 	h1{
 		font-size: 25px;
 		padding: 0px 0px 50px 20px;
@@ -46,6 +45,14 @@
 			&:last-of-type{color: $c_main-blue;}
 		}
 		@include rotate(90deg);
+	}
+	.landscape{
+		right: 130px;
+		bottom: 60px;
+		position: absolute;
+		max-width: 500px;
+		height: auto;
+		img{max-width: 100%;height: auto;@include box-shadow(0px 0px 50px #A9ADBB);}
 	}
 }
 .work-masthead{

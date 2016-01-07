@@ -1,6 +1,6 @@
 .main-header{
 	padding: 20px;
-	background-color: #010101;
+	background-color: $c_dark;
 	font-size: 11px;
 	position: fixed;
 	z-index: 101;
@@ -11,9 +11,18 @@
 	@extend .cf;
 	a{
 		@include easing(350ms);
+		position: relative;
 		&:hover{
 			@include easing(350ms);
 			color: #FFDA86;
+		}
+		span{
+			margin-top: 2px;
+			left: -58px;
+			display: block;
+			position: absolute;
+			font-size: 8px;
+			@include opacity(0.5);
 		}
 	}
 	a.name{
