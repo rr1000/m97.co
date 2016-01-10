@@ -5,7 +5,7 @@
 }
 $f_bu: 'Avenir Next', 'Avenir', 'Helvetica Neue', Helvetica, sans-serif;
 $f_sans: 'ap', $f_bu;
-$f_mono: 'Inconsolata', monospace, $f_bu;
+$f_mono: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif, 'Inconsolata', monospace, $f_bu;
 // Set body text
 body{
 	font-size: 14px;

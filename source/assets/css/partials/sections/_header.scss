@@ -3,11 +3,12 @@
 	background-color: $c_dark;
 	font-size: 11px;
 	position: fixed;
-	z-index: 101;
+	z-index: 999;
 	top: 0px;
 	left: 0px;
 	right: 0px;
 	width: 100%;
+	border-bottom: 1px solid lighten($c_dark, 10%);
 	@extend .cf;
 	a{
 		@include easing(350ms);

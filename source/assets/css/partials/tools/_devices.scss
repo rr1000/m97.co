@@ -1,9 +1,5 @@
-// 1199
-@media all and (max-width: 1199px){
-	.main-masthead{h1,h2,p{padding-left: 40px;}}
-}
-// 879px
-@media all and (max-width: 879px){
+// 926px
+@media all and (max-width: 926px){
 	.main-header{
 		padding: 0px;
 		a.name{
@@ -13,11 +9,11 @@
 		nav{
 			float: none;
 			display: none;
-			border-top: 2px solid #010101;
+			border-top: 1px solid #010101;
 			a{
 				display: block;
 				padding: 20px;
-				border-bottom: 2px solid #010101;
+				border-bottom: 1px solid #010101;
 				margin: 0px;
 				&:last-of-type{border: 0px;}
 				span{
@@ -43,16 +39,22 @@
 		padding: 60px 30px;
 		border-bottom: 0px;
 		h1{font-size: 18px;}
-		.location{
-			font-size: 11px;
-			left: -115px;
-			top: 155px;
-		}
-		.distinction{display: none;}
 	}
 	.work{
 		padding: 0px;
 		.row{margin: 0px;}
+		h2{font-size: 18px;padding: 30px;}
+			.work-block{
+				a{
+					p{
+						position: relative;
+						bottom: 0px;
+						left: 0px;
+						padding: 30px 0px 0px 0px;
+						text-align: center;
+					}
+				}
+			}
 	}
 	.about{
 		padding: 30px;
@@ -97,10 +99,8 @@
 // 374
 @media all and (max-width: 400px){
 	.main-masthead{
-		p{max-width: 275px;padding-left: 27px;}
+		// p{max-width: 275px;padding-left: 27px;}
 		h1,h2{
-			padding-left: 27px;
-			line-height: 1.5;
 		}
 	}
 	.main-footer{
@@ -108,8 +108,4 @@
 			line-height: 1.5;
 		}
 	}
-}
-// 320
-@media all and (max-width: 320px){
-	.main-masthead{.distinction{display: none;}}
 }

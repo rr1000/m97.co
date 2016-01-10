@@ -3,12 +3,8 @@
 	p{
 		font-size: 12px;
 		color: $c_dark;
-		padding: 0px 0px 20px;
 		text-align: center;
-	}
-	p.p2{
-		font-size: 12px;
-		color: $c_main-blue;
-		text-align: center;
+		font-family: $f_mono;
+		font-weight: 500;
 	}
 }

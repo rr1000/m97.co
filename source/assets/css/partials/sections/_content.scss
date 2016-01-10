@@ -1,5 +1,11 @@
 .work{
 	padding: 100px 20px;
+	h2{
+		font-size: 25px;
+		text-align: center;
+		color: $c_dark;
+		padding: 0px 0px 30px 0px;
+	}
 	.row{
 		@extend .cf;
 		margin: 0px auto 40px auto;
