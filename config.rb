@@ -12,6 +12,9 @@ configure :build do
   activate :directory_indexes
 end
 
+# Default minification
+activate :minify_html
+
 # Activate Extensions
 activate :syntax, :wrap => true
 activate :directory_indexes
