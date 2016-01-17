@@ -1,6 +1,6 @@
 .main-header{
 	padding: 20px;
-	background-color: $c_dark;
+	background-color: #fff;
 	font-size: 11px;
 	position: fixed;
 	z-index: 999;
@@ -8,55 +8,42 @@
 	left: 0px;
 	right: 0px;
 	width: 100%;
-	border-bottom: 1px solid lighten($c_dark, 10%);
 	@extend .cf;
-	a{
-		@include easing(350ms);
-		position: relative;
-		&:hover{
-			@include easing(350ms);
-			color: #FFDA86;
-		}
-		span{
-			margin-top: 2px;
-			left: -58px;
-			display: block;
-			position: absolute;
-			font-size: 8px;
-			@include opacity(0.5);
-		}
-	}
 	a.name{
 		display: block;
 		float: left;
-		color: #fff;
-		letter-spacing: 3px;
+		color: $c_dark;
+		font-weight: 600;
 		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-family: $f_mono;
+		margin: 0px 0px 1px 0px;
 		&:hover{
 			@include easing(350ms);
 			color: #FFDA86;
 		}
 	}
-	a.logo{
+	.logo-a{
+		position: absolute;
+		left: 10px;
+		top: 10px;
+		float: left;
 		display: block;
-		width: 44px;
-		height: 32px;
-		background: url('../img/logo.png');
+		width: 38px;
+		height: 36px;
+		background: url('../img/logo-a.svg');
 		background-repeat: no-repeat;
 		background-position: 0px 0px;
-		background-size: 44px 32px;
-		position: absolute;
-		top: 10px;
-		left: 0px;
-		right: 0px;
-		margin: auto;
+		background-size: 38px 36px;
 	}
 	nav{
 		float: right;
 		a{
-			margin: 0px 0px 0px 20px;
+			margin: 0px 0px 1px 20px;
 			display: inline-block;
-			color: #fff;
+			color: $c_dark;
+			font-weight: 600;
+			font-family: $f_mono;
 			text-transform: uppercase;
 			letter-spacing: 2px;
 			&:first-of-type{margin: 0px;}

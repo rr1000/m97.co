@@ -1,15 +1,66 @@
 .work{
-	padding: 100px 20px;
+	padding: 85px 20px;
 	h2{
-		font-size: 25px;
-		text-align: center;
+		font-size: 18px;
 		color: $c_dark;
+		line-height: 1.5;
 		padding: 0px 0px 30px 0px;
+		display: none; //remove
 	}
 	.row{
 		@extend .cf;
 		margin: 0px auto 40px auto;
 		&:last-of-type{margin: 0px auto;}
+	}
+	// Work Post
+	.work-post{
+		padding: 0px 0px 20px 0px;
+		border-bottom: 1px solid lighten($c_dark, 70%);
+		font-family: $f_mono;
+		position: relative;
+		.col-5-12{padding: 0px 20px 0px 0px;}
+		.col-7-12{padding: 0px 0px 0px 20px;}
+		@extend .cf;
+		img{max-width: 100%;}
+		.num{
+			position: absolute;
+			padding: 5px;
+			color: $c_main-blue;
+			font-weight: 500;
+			border: 2px solid $c_main-blue;
+			right: 0px;
+		}
+		header{
+			@extend .cf;
+			padding: 0px 0px 20px 0px;
+			h1{
+				font-size: 18px;
+				font-weight: 700;
+				color: $c_dark;
+				padding: 0px 0px 10px 0px;
+			}
+			.meta{
+				font-size: 12px;
+				text-transform: uppercase;
+				color: $c_text;
+				font-weight: 500;
+			}
+		}
+		article{
+			p{
+				font-size: 12px;
+				color: $c_text;
+				line-height: 2;
+				padding: 0px 0px 10px 0px;
+				&:last-of-type{padding: 0px;}
+			}
+		}
+	}
+	.row-alt{
+		@extend .row;
+		.work-post{
+			
+		}
 	}
 	.work-block{
 		width: 100%;
