@@ -1,0 +1,73 @@
+canvas#sphere{
+	display: inline;
+	width: 100%;
+	height: auto;
+}
+.c-wrapper{
+	text-align: center;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+section.home{
+	background: $c_dark; // Legacy
+	background-image: radial-gradient(50% 109%, #272C45 10%, darken(#171A29, 10%) 100%);
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	z-index: 99;
+	article{
+		position: absolute;
+		top: 30px;
+		left: 30px;
+		margin: auto;
+		width: 500px;
+		.article-content{
+			.logo{
+				display: block;
+				width: 38px;
+				height: 36px;
+				background: url('../img/logo-a.svg');
+				background-repeat: no-repeat;
+				background-position: 0px 0px;
+				background-size: 38px 36px;
+			}
+			color: $c_white;
+			h1{
+				font-size: 14px;
+				font-weight: 300;
+				line-height: 1.8;
+				margin: 30px 0px;
+				max-width: 320px;
+			}
+		}
+		nav{
+			max-width: 300px;
+			a{
+				text-decoration: none;
+				color: $c_white;
+				display: block;
+				padding: 10px 0px;
+				text-transform: uppercase;
+				font-size: 12px;
+				letter-spacing: 3px;
+				background-color: transparent;
+				border-left: 1px solid transparent;
+				@include easing(350ms);
+				&:hover{
+					@include easing(350ms);
+					background-color: rgba(255,255,255,0.1);
+					padding: 10px;
+					border-left: 1px solid $c_white;
+				}
+			}
+		}
+	}
+}

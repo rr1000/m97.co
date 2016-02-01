@@ -1,14 +1,18 @@
-@import url(//fonts.googleapis.com/css?family=Inconsolata:400,700);
 @font-face{
 	font-family: 'ap';
 	src: url('../fonts/ap.otf');
 }
-$f_bu: 'Avenir Next', 'Avenir', 'Helvetica Neue', Helvetica, sans-serif;
-$f_sans: 'ap', $f_bu;
-$f_mono: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif, 'Inconsolata', monospace, $f_bu;
+$f_bu: 'Avenir Next', 'Avenir', 'Helvetica Neue', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', Helvetica, sans-serif;
+$f_header: 'ap', $f_bu;
+$f_body: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif, $f_bu;
+
+// Alias'
+$f_mono: $f_header;
+$f_sans: $f_body;
+
 // Set body text
 body{
 	font-size: 14px;
-	font-family: $f_sans;
+	font-family: $f_body;
 	a{text-decoration: none;}
 }
