@@ -1,0 +1,62 @@
+// About
+.about{
+	display: none;
+	z-index: 999;
+	background-color: $c_white;
+	position: absolute;
+	top: 0px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	padding: 30px;
+	overflow: scroll;
+	.about-inner{max-width: 600px;margin: 0px auto;}
+	.logo{
+		display: block;
+		width: 38px;
+		height: 36px;
+		background: url('../img/logo-b.svg');
+		background-repeat: no-repeat;
+		background-position: 0px 0px;
+		background-size: 38px 36px;
+	}
+	.close{
+		position: fixed;
+		top: 30px;
+		left: 30px;
+		background-color: $c_main-blue;
+		padding: 3px 5px;
+		color: $c_white;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-size: 12px;
+		@include easing(350ms);
+		&:hover{
+			@include easing(350ms);
+			background-color: $c_dark;
+			cursor: pointer;
+		}
+	}
+	h1{
+		font-size: 14px;
+		font-weight: 700;
+		color: $c_dark;
+		margin: 30px 0px 15px 0px;
+	}
+	figure{
+		padding: 0px 0px 20px 0px;
+		img{max-width: 100%;}
+	}
+	p{
+		line-height: 1.5;
+		padding: 0px 0px 20px 0px;
+	}
+	h3{
+		font-weight: 700;
+		text-transform: uppercase;
+		font-size: 16px;
+		letter-spacing: 3px;
+		padding: 0px 0px 20px 0px;
+	}
+}

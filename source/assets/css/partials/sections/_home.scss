@@ -45,11 +45,13 @@ section.home{
 				font-weight: 300;
 				line-height: 1.8;
 				margin: 30px 0px;
-				max-width: 320px;
+				max-width: 350px;
 			}
 		}
 		nav{
 			max-width: 300px;
+			#showAbout,
+			#showWork{cursor: pointer;}
 			a{
 				text-decoration: none;
 				color: $c_white;
@@ -69,5 +71,77 @@ section.home{
 				}
 			}
 		}
+	}
+}
+// Work list modal
+.work-list{
+	display: none;
+	z-index: 999;
+	background-color: $c_white;
+	position: absolute;
+	top: 0px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	padding: 30px;
+	.list-inner{max-width: 600px;margin: 0px auto;}
+	.logo{
+		display: block;
+		width: 38px;
+		height: 36px;
+		background: url('../img/logo-b.svg');
+		background-repeat: no-repeat;
+		background-position: 0px 0px;
+		background-size: 38px 36px;
+	}
+	.close{
+		position: fixed;
+		top: 30px;
+		left: 30px;
+		background-color: $c_main-blue;
+		padding: 3px 5px;
+		color: $c_white;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-size: 12px;
+		@include easing(350ms);
+		&:hover{
+			@include easing(350ms);
+			background-color: $c_dark;
+			cursor: pointer;
+		}
+	}
+	h1{
+		font-size: 14px;
+		font-weight: 700;
+		color: $c_dark;
+		margin: 30px 0px 15px 0px;
+	}
+	a{
+		@extend .cf;
+		display: block;
+		padding: 15px 0px;
+		color: $c_dark;
+		border-left: 1px solid transparent;
+		span.date,
+		span.title{display: block;float: left;}
+		span.date{margin: 0px 30px 0px 0px;}
+		span.title{
+			border-bottom: 1px solid $c_main-blue;
+		}
+		@include easing(350ms);
+		&:hover{
+			padding: 15px 10px;
+			@include easing(350ms);
+			border-left: 1px solid $c_dark;
+			background-color: rgba(0,0,0,0.05);
+			span.date{color: $c_main-blue;}
+		}
+	}
+	a.disabled{
+		opacity: 0.5;
+		span.title{border-bottom: 1px solid $c_dark;}
+		&:hover{cursor: not-allowed;}
 	}
 }

@@ -7,8 +7,8 @@
 			<div class="logo"></div>
 			<h1>Hello. My name is Ryan. My passions lie at the intersection of aesthetics, engineering, and business. This is where I document my work.</h1>
 			<nav>
-				<a href="/work">work</a>
-				<a href="//medium.com/@ryansrich/a-brief-history-e4be8b16ee7f#.xpdoelbdx" target="_blank">about</a>
+				<a id="showWork">work</a>
+				<a id="showAbout">about</a>
 				<a href="//medium.com/@ryansrich" target="_blank">writing</a>
 				<a href="//github.com/rr1000" target="_blank">github</a>
 				<a href="//twitter.com/_ryanSrich" target="_blank">twitter</a>
@@ -16,4 +16,6 @@
 			</nav>
 		</div>
 	</article>
+	<%= partial "partials/about" %>
+	<%= partial "partials/work-list" %>
 </section>

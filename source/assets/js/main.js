@@ -35,4 +35,30 @@ $(document).ready(function(){
 	$(".imgThree" ).draggable({
 		containment: ".about"
 	});
+	// Work list
+	var showWork = $("#showWork");
+	var workList = $(".work-list");
+	var closeButton = $(".work-list .close");
+	// Show work list
+	showWork.click(function(e){
+		e.preventDefault();
+		workList.fadeIn(250);
+	});
+	// Close work list
+	closeButton.click(function(){
+		workList.fadeOut(250);
+	});
+	// About
+	var showAbout = $("#showAbout");
+	var about = $(".about");
+	var aboutCloseButton = $(".about .close");
+	// Show about
+	showAbout.click(function(e){
+		e.preventDefault();
+		about.fadeIn(250);
+	});
+	// Close about
+	aboutCloseButton.click(function(){
+		about.fadeOut(250);
+	});
 });
